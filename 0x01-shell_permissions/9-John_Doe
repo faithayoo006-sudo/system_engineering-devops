@@ -1,2 +1,2 @@
 #!/bin/bash
-Sets the permissions of the file 'hello' to -rwxr-x-wx
+chmod 731 hello
