@@ -1,1 +1,0 @@
-This directory contains shell scripts for creating and managing aliases and environment variables in Linux. Each script is exactly two lines long and demonstrates the use of bash scripting for shell customization.
