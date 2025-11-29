@@ -1,2 +1,2 @@
 #!/bin/bash
-# Write the output of ls -la to ls_cwd_content
+ls -la > ls_cwd_content
