@@ -1,8 +1,7 @@
- #!/usr/bin/env bash
+#!/usr/bin/env bash
 # A Bash script that continuously displays "To infinity and beyond" and prints "I am invincible!!!" when receiving SIGTERM
-trap 'printf "I am invincible!!!\n"' SIGTERM
-while true
-do
+trap 'echo "I am invincible!!!"' SIGTERM
+while true; do
     echo "To infinity and beyond"
     sleep 2
 done
