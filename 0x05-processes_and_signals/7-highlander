@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Only print OK on SIGTERM
-trap 'printf "OK\n"; exit 0' SIGTERM
-# Keep the process alive
-while true; do
+# Trap SIGTERM and print exactly "OK", then exit
+trap 'printf "OK"; exit 0' SIGTERM
+# Wait indefinitely without printing anything
+while :; do
     sleep 1
 done
