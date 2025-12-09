@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# Continuously displays "To infinity and beyond" and prints "OK" on SIGTERM
-# Trap SIGTERM and print exactly OK, then exit
-trap 'printf "OK"; exit 0' SIGTERM
+# Only print OK on SIGTERM
+trap 'printf "OK\n"; exit 0' SIGTERM
+# Keep the process alive
 while true; do
-    printf "To infinity and beyond\n"
-    sleep 2
+    sleep 1
 done
