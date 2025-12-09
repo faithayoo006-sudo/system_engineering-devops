@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Continuous loop but prints exactly OK on SIGTERM
-# Disable output buffering
-export PYTHONUNBUFFERED=1
-# Trap SIGTERM, print exactly "OK" with newline, and exit
-trap 'printf "OK\n" >&1; exit 0' SIGTERM
-# Infinite loop
+# Continuous loop that prints "OK" when receiving SIGTERM
+
+# Trap SIGTERM, print exactly "OK" and exit
+trap 'printf "OK\n"; exit 0' SIGTERM
+
+# Infinite loop to keep the process alive
 while true; do
     sleep 1
 done
